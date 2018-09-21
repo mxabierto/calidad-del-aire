@@ -31,6 +31,9 @@ MANIFEST
 processed/
 raw/
 
+# Notebooks anteriores 
+analisis_previo/
+
 # Otros
 *.tex
 *.png
