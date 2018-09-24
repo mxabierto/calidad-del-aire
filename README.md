@@ -1,4 +1,4 @@
-# Ventilando los datos abiertos sobre calidad del aire.
+# Ventilando datos abiertos sobre calidad del aire.
 
 <!-- TOC depthFrom:2 orderedList:true -->
 
