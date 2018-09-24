@@ -27,5 +27,4 @@ El procesamiento de los datos se hizo en Python con ayuda de la herramienta Jupy
 
 1. [Prediccion_ozono_CDMX_GDL](https://github.com/opintel/calidad-del-aire/blob/master/notebooks/5_prediccion_ozono_CDMX_GDL.ipynb): Modelo de predicción de series de tiempo para el ozono en la Ciudad de México y Guadalajara usando el modelo [Prophet](https://github.com/facebook/prophet).
 
-1. [Mapas_interactivos_y_gifs](https://github.com/opintel/calidad-del-aire/blob/master/notebooks/6_mapas_interactivos_y_gifs.ipynb): Generación de mapas interactivos en formato html y gifs de evolución de ozono durante el día. El de la CDMX se ve así:
-<img src="https://media.giphy.com/media/2UEYcoLYl2A1t6omx9/giphy.gif" width="380" height="240" />
+1. [Mapas_interactivos_y_gifs](https://github.com/opintel/calidad-del-aire/blob/master/notebooks/6_mapas_interactivos_y_gifs.ipynb): Generación de mapas interactivos en formato html y gifs de evolución de ozono durante el día. El de la CDMX se ve [así](https://github.com/opintel/calidad-del-aire/blob/master/O3_cdmx_compressed.gif).
