@@ -1,0 +1,3570 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <style>#map_e9cb9bd95a904f27b4cc92b44100e2b0 {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_e9cb9bd95a904f27b4cc92b44100e2b0" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_e9cb9bd95a904f27b4cc92b44100e2b0 = L.map(
+        'map_e9cb9bd95a904f27b4cc92b44100e2b0', {
+        center: [22.396092, -101.73143],
+        zoom: 5,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+    
+    
+    var tile_layer_af471a7e4b964384bd213b2be472410e = L.tileLayer(
+        'https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "subdomains": "abc"
+}).addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+    
+            var circle_marker_2d0f820dda05402eb15bd4d53ccf0477 = L.circleMarker(
+                [21.883780555556, -102.295825],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_2d0f820dda05402eb15bd4d53ccf0477.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Centro <br> <b> Ciudad: </b> Aguascalientes <br> <b> Mediciones: </b> O3, PM10, CO, NO2, PM2.5, SO2, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_211979776fbb4474af148fa2e7e8a240 = L.circleMarker(
+                [32.631316666667, -115.44463055556001],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_211979776fbb4474af148fa2e7e8a240.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> UABC <br> <b> Ciudad: </b> Mexicali <br> <b> Mediciones: </b> NO2, O3, PM2.5, CO, SO2 <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_12c75bae76a74ff78643a45a225dc996 = L.circleMarker(
+                [32.639722222222, -115.50638888889],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_12c75bae76a74ff78643a45a225dc996.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> COBACH <br> <b> Ciudad: </b> Mexicali <br> <b> Mediciones: </b> NO2, O3, PM2.5 <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_547b8491ec2d44bb9770cd4ffba35db2 = L.circleMarker(
+                [32.603638888888995, -115.48594444443998],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_547b8491ec2d44bb9770cd4ffba35db2.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> CESPM <br> <b> Ciudad: </b> Mexicali <br> <b> Mediciones: </b> CO, NO2, O3, PM2.5, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_b66caa866fe8442099ae931dbf0cef02 = L.circleMarker(
+                [32.529461111111004, -116.92128055556002],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_b66caa866fe8442099ae931dbf0cef02.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Laboratorio <br> <b> Ciudad: </b> Tijuana <br> <b> Mediciones: </b> CO, NO2, O3, PM2.5 <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_37d8a9234de54bd59ae384ceb88d4bc9 = L.circleMarker(
+                [32.4975, -116.97694444443998],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_37d8a9234de54bd59ae384ceb88d4bc9.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> La Mesa <br> <b> Ciudad: </b> Tijuana <br> <b> Mediciones: </b> CO, NO2, PM2.5, SO2 <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_aa4f4f2b480446bb9a1ef70e2c2ef362 = L.circleMarker(
+                [28.632775, -106.03886694444],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_aa4f4f2b480446bb9a1ef70e2c2ef362.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> SUR <br> <b> Ciudad: </b> Chihuahua <br> <b> Mediciones: </b> O3, PM10, CO, NO2, PM2.5, SO2, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_f1e017faa4074cb3bdb4c4a1c07d765e = L.circleMarker(
+                [28.652227777778002, -106.08535833333],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_f1e017faa4074cb3bdb4c4a1c07d765e.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Centro <br> <b> Ciudad: </b> Chihuahua <br> <b> Mediciones: </b> TMP, NO2, O3, PM10, SO2 <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_91d5dbe974cc43f282a62346e2f73185 = L.circleMarker(
+                [28.716083333333, -106.13330555556],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_91d5dbe974cc43f282a62346e2f73185.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> CIMAV <br> <b> Ciudad: </b> Chihuahua <br> <b> Mediciones: </b> CO, PM10 <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_008a1a229b2b4e5a95f7c57046c48cca = L.circleMarker(
+                [25.522694444444, -103.39580555556],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_008a1a229b2b4e5a95f7c57046c48cca.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> CONALEP <br> <b> Ciudad: </b> Torreón <br> <b> Mediciones: </b> PM2.5, SO2, TMP, CO, NO2, O3, PM10 <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_009210a0a8b24b84bd63d1a38936a130 = L.circleMarker(
+                [24.034472222222, -104.64502777778],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_009210a0a8b24b84bd63d1a38936a130.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> ITD <br> <b> Ciudad: </b> Durango <br> <b> Mediciones: </b> PM10, TMP, CO, NO2, O3 <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_9548dcb2a6ad4f4e9b0cdbd3ce76a4ad = L.circleMarker(
+                [24.051555555556, -104.61136111111],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_9548dcb2a6ad4f4e9b0cdbd3ce76a4ad.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> IPN <br> <b> Ciudad: </b> Durango <br> <b> Mediciones: </b> CO, NO2, O3, PM10, PM2.5, SO2, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_a8ad1633f2e64c31ae809f0b54fc3eda = L.circleMarker(
+                [24.026777777778, -104.692975],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_a8ad1633f2e64c31ae809f0b54fc3eda.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> SRNyMA <br> <b> Ciudad: </b> Durango <br> <b> Mediciones: </b> CO, NO2, O3, PM10, PM2.5, SO2, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_21d1e1d1b42c409689372df45b66c3aa = L.circleMarker(
+                [25.551222222222, -103.50252777778],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_21d1e1d1b42c409689372df45b66c3aa.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Campestre <br> <b> Ciudad: </b> Gómez Palacio <br> <b> Mediciones: </b> CO, NO2, PM10, SO2 <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_88438a63ab67495eb60f8f102f53e73b = L.circleMarker(
+                [20.5175, -100.81555555556],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_88438a63ab67495eb60f8f102f53e73b.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Policía <br> <b> Ciudad: </b> Celaya <br> <b> Mediciones: </b> CO, NO2, O3, PM10, PM2.5, SO2, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_642a6d9c2ab947d5b1874be8e0282c61 = L.circleMarker(
+                [20.545277777778, -100.80694444444],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_642a6d9c2ab947d5b1874be8e0282c61.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Tecnológico <br> <b> Ciudad: </b> Celaya <br> <b> Mediciones: </b> NO2, O3, PM10, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_d7b7c233f87747738fc4f3bd07c9bf7d = L.circleMarker(
+                [20.5375, -100.83972222222],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_d7b7c233f87747738fc4f3bd07c9bf7d.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> San Juanico <br> <b> Ciudad: </b> Celaya <br> <b> Mediciones: </b> CO, NO2, O3, PM10, PM2.5, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_36ce053b041f43e28a448292d4b42b4d = L.circleMarker(
+                [20.6925, -101.365],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_36ce053b041f43e28a448292d4b42b4d.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Sec. Oficial <br> <b> Ciudad: </b> Irapuato <br> <b> Mediciones: </b> CO, NO2, O3, PM10, SO2 <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_2ceee327456a4aea8875c8999be4ad09 = L.circleMarker(
+                [21.118055555555998, -101.60216666667],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_2ceee327456a4aea8875c8999be4ad09.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Bomberos <br> <b> Ciudad: </b> Irapuato <br> <b> Mediciones: </b> CO, NO2, O3, PM10, PM2.5, SO2, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_3ec44ff327ef426ab346a6ca00bce20c = L.circleMarker(
+                [20.658055555556, -101.34888888889],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_3ec44ff327ef426ab346a6ca00bce20c.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Teódula <br> <b> Ciudad: </b> Irapuato <br> <b> Mediciones: </b> CO, NO2, O3, PM10, PM2.5, SO2, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_65fdc40b245840269bb721a935448c97 = L.circleMarker(
+                [21.103055555556, -101.63611111111],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_65fdc40b245840269bb721a935448c97.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> CICEG - Bomberos <br> <b> Ciudad: </b> León <br> <b> Mediciones: </b> CO, NO2, O3, PM10, PM2.5, SO2, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_9ed618d1690a4adbb5fe7c0b11d37ae1 = L.circleMarker(
+                [21.133333333333002, -101.68],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_9ed618d1690a4adbb5fe7c0b11d37ae1.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Facultad de Medicina <br> <b> Ciudad: </b> León <br> <b> Mediciones: </b> CO, NO2, O3, PM10, PM2.5, SO2, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_93d16b31f6234503ae41cfa072db0541 = L.circleMarker(
+                [21.108611111111, -101.68861111111],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_93d16b31f6234503ae41cfa072db0541.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> T21 <br> <b> Ciudad: </b> León <br> <b> Mediciones: </b> CO, O3, PM10, SO2, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_63e00b4b869243dbba2bf9d47ba7ef09 = L.circleMarker(
+                [20.578611111110998, -101.19888888889],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_63e00b4b869243dbba2bf9d47ba7ef09.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Cruz roja <br> <b> Ciudad: </b> Salamanca <br> <b> Mediciones: </b> CO, NO2, O3, PM10, PM2.5, SO2, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_7e8452d907bf42ae90104c1cedb623a6 = L.circleMarker(
+                [20.558055555556, -101.20472222222],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_7e8452d907bf42ae90104c1cedb623a6.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> DIF <br> <b> Ciudad: </b> Salamanca <br> <b> Mediciones: </b> CO, NO2, O3, PM10, PM2.5, SO2, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_81e806d41aa7440a9ea579c9913b27e6 = L.circleMarker(
+                [20.565, -101.18805555556],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_81e806d41aa7440a9ea579c9913b27e6.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Nativitas <br> <b> Ciudad: </b> Salamanca <br> <b> Mediciones: </b> NO2, O3, PM10, SO2, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_43bb4432ddd349d6b6529d3b1c17718d = L.circleMarker(
+                [20.947777777778, -101.42583333333],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_43bb4432ddd349d6b6529d3b1c17718d.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Hospital General <br> <b> Ciudad: </b> Silao <br> <b> Mediciones: </b> CO, NO2, O3, PM10, SO2, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_7acd68a374b94e269f9980d8b41c7297 = L.circleMarker(
+                [20.06, -99.221944444444],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_7acd68a374b94e269f9980d8b41c7297.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Centro de Salud <br> <b> Ciudad: </b> Atitalaquia <br> <b> Mediciones: </b> CO, NO2, O3, PM10, PM2.5, SO2, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_84fde668905641269d2519e81608261a = L.circleMarker(
+                [20.006666666666998, -99.21888888888901],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_84fde668905641269d2519e81608261a.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Primaria Revolución <br> <b> Ciudad: </b> Atotonilco <br> <b> Mediciones: </b> CO, NO2, O3, PM10, PM2.5, SO2, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_80a377dc12d6417dbe87f317950801b9 = L.circleMarker(
+                [19.771694444444, -98.577694444444],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_80a377dc12d6417dbe87f317950801b9.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Estación de Bomberos de Cd. Sahagún <br> <b> Ciudad: </b> Tepeapulco <br> <b> Mediciones: </b> CO, NO2, O3, PM10, PM2.5, SO2, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_4f02077afad642c68ce5413e5e97420b = L.circleMarker(
+                [20.375111111111, -99.65444444444401],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_4f02077afad642c68ce5413e5e97420b.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Hospital <br> <b> Ciudad: </b> Huichapan <br> <b> Mediciones: </b> CO, NO2, O3, PM10, PM2.5, SO2, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_761f37327e944cea8236f79bb35fb476 = L.circleMarker(
+                [19.905555555556, -99.346944444444],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_761f37327e944cea8236f79bb35fb476.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Primaria Melchor Ocampo <br> <b> Ciudad: </b> Tepeji <br> <b> Mediciones: </b> CO, NO2, O3, PM10, PM2.5, SO2, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_7f9b7aeb2606454ca85e418d9b71ddab = L.circleMarker(
+                [20.053777777778002, -99.34005555555599],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_7f9b7aeb2606454ca85e418d9b71ddab.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Centro de Salud <br> <b> Ciudad: </b> Tula <br> <b> Mediciones: </b> CO, NO2, O3, PM10, SO2, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_fdf5c026fda54d29b48757d35d508753 = L.circleMarker(
+                [20.120555555556, -98.74],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_fdf5c026fda54d29b48757d35d508753.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Jardín del Maestro <br> <b> Ciudad: </b> Pachuca <br> <b> Mediciones: </b> CO, NO2, O3, PM10, PM2.5, SO2, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_7b269224895a42778c11f88c5a4b0ead = L.circleMarker(
+                [20.077222222221998, -98.777972222222],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_7b269224895a42778c11f88c5a4b0ead.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Museo del Rehilete <br> <b> Ciudad: </b> Pachuca <br> <b> Mediciones: </b> CO, NO2, O3, PM10, PM2.5, SO2, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_02009ecb923047c890ed1daf4cdec082 = L.circleMarker(
+                [19.840583333333, -98.981333333333],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_02009ecb923047c890ed1daf4cdec082.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Biblioteca <br> <b> Ciudad: </b> Tizayuca <br> <b> Mediciones: </b> CO, NO2, O3, PM10, SO2, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_4fd11732087545f6b5e2ce030fa6312b = L.circleMarker(
+                [20.719673888889, -103.35543472222],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_4fd11732087545f6b5e2ce030fa6312b.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Atemajac <br> <b> Ciudad: </b> Guadalajara <br> <b> Mediciones: </b> CO, NO2, O3, PM10, SO2, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_4f2f42fa03354d3991e18bdbe980b8de = L.circleMarker(
+                [20.673764722222, -103.33333611111],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_4f2f42fa03354d3991e18bdbe980b8de.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Centro  <br> <b> Ciudad: </b> Guadalajara <br> <b> Mediciones: </b> CO, NO2, O3, PM10, PM2.5, SO2, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_0be7a415d88143dd9d563ba672c9e258 = L.circleMarker(
+                [20.631268055556, -103.41643083333],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_0be7a415d88143dd9d563ba672c9e258.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Las Águilas <br> <b> Ciudad: </b> Guadalajara <br> <b> Mediciones: </b> CO, NO2, O3, PM10, PM2.5, SO2, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_6409f32f06cc4f1ca0802e817b76c10c = L.circleMarker(
+                [20.576823888889, -103.32652861111],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_6409f32f06cc4f1ca0802e817b76c10c.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Las Pintas <br> <b> Ciudad: </b> Guadalajara <br> <b> Mediciones: </b> CO, NO2, O3, PM10, SO2, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_f420868a63af4ba9afd1fb88144cbdb2 = L.circleMarker(
+                [20.629294722222, -103.26397416667],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_f420868a63af4ba9afd1fb88144cbdb2.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Loma Dorada <br> <b> Ciudad: </b> Guadalajara <br> <b> Mediciones: </b> CO, NO2, O3, PM10, SO2, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_95809eeaa654479ea860e7ae78b6f7c7 = L.circleMarker(
+                [20.614444444444, -103.34333333333001],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_95809eeaa654479ea860e7ae78b6f7c7.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Miravalle <br> <b> Ciudad: </b> Guadalajara <br> <b> Mediciones: </b> CO, NO2, O3, PM10, PM2.5, SO2, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_d74b80c27b40430d9f4b17672fe927ad = L.circleMarker(
+                [20.700538611111, -103.29661666667],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_d74b80c27b40430d9f4b17672fe927ad.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Oblatos <br> <b> Ciudad: </b> Guadalajara <br> <b> Mediciones: </b> CO, NO2, O3, PM10, SO2, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_69aa0853cf2642b693fd8c2c999662be = L.circleMarker(
+                [20.529149444444002, -103.37717944444],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_69aa0853cf2642b693fd8c2c999662be.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Santa Fe <br> <b> Ciudad: </b> Guadalajara <br> <b> Mediciones: </b> CO, NO2, O3, PM10, PM2.5, SO2, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_7243f90c3e1b493fb0af3b788599a9ba = L.circleMarker(
+                [20.640966666666998, -103.31259194444],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_7243f90c3e1b493fb0af3b788599a9ba.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Tlaquepaque <br> <b> Ciudad: </b> Guadalajara <br> <b> Mediciones: </b> CO, NO2, O3, PM10, PM2.5, SO2, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_4e7765827d2c4471b64ad4efb1f15812 = L.circleMarker(
+                [20.680193055556, -103.39855138889],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_4e7765827d2c4471b64ad4efb1f15812.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Vallarta <br> <b> Ciudad: </b> Guadalajara <br> <b> Mediciones: </b> CO, NO2, O3, PM10, SO2, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_cd90395cebbd4734b18b296ab2608924 = L.circleMarker(
+                [19.260305555556, -99.645722222222],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_cd90395cebbd4734b18b296ab2608924.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Ceboruco <br> <b> Ciudad: </b> Toluca <br> <b> Mediciones: </b> CO, NO2, O3, PM10, PM2.5, SO2, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_3cfe075307544678bcd68e6acff150de = L.circleMarker(
+                [19.278083333333, -99.656416666667],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_3cfe075307544678bcd68e6acff150de.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Toluca Centro <br> <b> Ciudad: </b> Toluca <br> <b> Mediciones: </b> CO, NO2, O3, PM10, PM2.5, SO2, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_9d751eb76d494737bb778cb64e7b2bfa = L.circleMarker(
+                [19.270194444444, -99.595194444444],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_9d751eb76d494737bb778cb64e7b2bfa.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Metepec <br> <b> Ciudad: </b> Toluca <br> <b> Mediciones: </b> CO, NO2, O3, PM10, PM2.5, SO2, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_a73c5bb298ba4720be747c04239d570b = L.circleMarker(
+                [19.283444444444, -99.683488888889],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_a73c5bb298ba4720be747c04239d570b.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Oxtotitlán <br> <b> Ciudad: </b> Toluca <br> <b> Mediciones: </b> CO, NO2, O3, PM10, PM2.5, SO2, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_a6df74de601d4229b783bbc11e507637 = L.circleMarker(
+                [19.327222222221998, -99.634288888889],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_a6df74de601d4229b783bbc11e507637.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> San Cristobal <br> <b> Ciudad: </b> Toluca <br> <b> Mediciones: </b> CO, NO2, O3, PM10, PM2.5, SO2, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_c3e497546a7447da9c2ac9add9da938e = L.circleMarker(
+                [19.280416666666998, -99.541666666667],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_c3e497546a7447da9c2ac9add9da938e.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> San Mateo Atenco <br> <b> Ciudad: </b> Toluca <br> <b> Mediciones: </b> CO, NO2, O3, PM10, PM2.5, SO2, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_cc29577e701a421882c15fc7d2bab399 = L.circleMarker(
+                [19.690461111111, -101.20478888889],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_cc29577e701a421882c15fc7d2bab399.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Universidad Michoacana de San Nicolás Hidalgo <br> <b> Ciudad: </b> Morelia <br> <b> Mediciones: </b> CO, NO2, O3, PM2.5, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_d7bc8808762f4a4c8ae2d3d71527d4f6 = L.circleMarker(
+                [19.691977777778, -101.15547222222],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_d7bc8808762f4a4c8ae2d3d71527d4f6.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Laboratorio de Salud <br> <b> Ciudad: </b> Morelia <br> <b> Mediciones: </b> CO, NO2, O3, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_9a8fe70e35df410e93095599a24b99bc = L.circleMarker(
+                [18.921817777778, -99.234896666667],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_9a8fe70e35df410e93095599a24b99bc.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Cuernavaca 01 <br> <b> Ciudad: </b> Cuernavaca <br> <b> Mediciones: </b> CO, O3, PM10, PM2.5, SO2, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_d3ad5a6fa766452aa76f51bfb915b8fa = L.circleMarker(
+                [21.478177777778, -104.86774166667],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_d3ad5a6fa766452aa76f51bfb915b8fa.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Tecnológico de Tepic <br> <b> Ciudad: </b> Tepic <br> <b> Mediciones: </b> CO, NO2, O3, PM10, PM2.5, SO2, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_fab382bdaab64513949aa8e0c68405a0 = L.circleMarker(
+                [21.509805555556003, -104.91018055556],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_fab382bdaab64513949aa8e0c68405a0.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Primaria Julián Gascón Mercado <br> <b> Ciudad: </b> Tepic <br> <b> Mediciones: </b> O3, PM10 <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_a6be6b6724904fc6a6d939ac85a3d994 = L.circleMarker(
+                [25.675555555556002, -100.46472222222],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_a6be6b6724904fc6a6d939ac85a3d994.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Santa Catarina <br> <b> Ciudad: </b> Monterrey <br> <b> Mediciones: </b> O3, PM10 <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_f3618191c8af49219b2dbb6c24aeb439 = L.circleMarker(
+                [25.756944444444, -100.36583333333],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_f3618191c8af49219b2dbb6c24aeb439.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> San Bernabé <br> <b> Ciudad: </b> Monterrey <br> <b> Mediciones: </b> PM10, PM2.5, SO2, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_ab47e06d9f734290af30493caa810598 = L.circleMarker(
+                [25.675833333333003, -100.33833333333],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_ab47e06d9f734290af30493caa810598.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Obispado <br> <b> Ciudad: </b> Monterrey <br> <b> Mediciones: </b> TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_dcf08467fa9947c6a1535bd008a57505 = L.circleMarker(
+                [25.745277777778, -100.255],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_dcf08467fa9947c6a1535bd008a57505.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> San Nicolás <br> <b> Ciudad: </b> Monterrey <br> <b> Mediciones: </b> CO <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_33af378186c34a36bb9ae9e50ba76c69 = L.circleMarker(
+                [25.668055555556002, -100.24944444444],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_33af378186c34a36bb9ae9e50ba76c69.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> La Pastora <br> <b> Ciudad: </b> Monterrey <br> <b> Mediciones: </b> O3, PM10 <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_93de1a0b44ad4df2833ca3c926293a97 = L.circleMarker(
+                [25.783333333333, -100.58583333333],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_93de1a0b44ad4df2833ca3c926293a97.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> García <br> <b> Ciudad: </b> Monterrey <br> <b> Mediciones: </b> CO, NO2 <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_395d677847b94df19fb3a553aa28d052 = L.circleMarker(
+                [25.646111111111, -100.09555555556],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_395d677847b94df19fb3a553aa28d052.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Juárez <br> <b> Ciudad: </b> Monterrey <br> <b> Mediciones: </b> CO, NO2, O3 <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_df902525bc35405e999c6f80d3eb7031 = L.circleMarker(
+                [25.665277777778, -100.41277777778],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_df902525bc35405e999c6f80d3eb7031.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> San Pedro <br> <b> Ciudad: </b> Monterrey <br> <b> Mediciones: </b> O3, PM10 <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_f25f2396eeed4f078d43764e0c7d98dc = L.circleMarker(
+                [16.699340277778, -96.866455],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_f25f2396eeed4f078d43764e0c7d98dc.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> CEDART <br> <b> Ciudad: </b> Oaxaca <br> <b> Mediciones: </b> SO2, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_438360a5f0b04189960b56a70faa2746 = L.circleMarker(
+                [22.13175, -100.97691666667],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_438360a5f0b04189960b56a70faa2746.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> DIF <br> <b> Ciudad: </b> San Luis Potosí Estatal <br> <b> Mediciones: </b> NO2, PM10, SO2 <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_af6179e74d0c499f9b02ff5899a4013b = L.circleMarker(
+                [22.174222222222, -100.99308333333],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_af6179e74d0c499f9b02ff5899a4013b.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Biblioteca <br> <b> Ciudad: </b> San Luis Potosí Estatal <br> <b> Mediciones: </b> CO, TMP, NO2, O3, PM10, SO2 <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_238d264b58cf4b63be6819c216edb7a0 = L.circleMarker(
+                [31.293111111111003, -110.95230555556002],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_238d264b58cf4b63be6819c216edb7a0.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Instituto Tecnológico de Nogales <br> <b> Ciudad: </b> Nogales <br> <b> Mediciones: </b> PM10, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_1446cd8f81bd40dda89875f59079a24f = L.circleMarker(
+                [19.317583333333, -98.23730555555599],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_1446cd8f81bd40dda89875f59079a24f.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Palacio de Gobierno <br> <b> Ciudad: </b> Tlaxcala <br> <b> Mediciones: </b> PM2.5, SO2, CO, NO2, O3, PM10, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_76d967dfd93c47d3baf06e78535b928a = L.circleMarker(
+                [19.530094444444, -96.881880555556],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_76d967dfd93c47d3baf06e78535b928a.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> STPS <br> <b> Ciudad: </b> Xalapa <br> <b> Mediciones: </b> PM10, PM2.5, CO, NO2, O3, SO2, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_96b03c573b3c4f50913cac10bf508220 = L.circleMarker(
+                [20.973272222222, -89.62481111111099],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_96b03c573b3c4f50913cac10bf508220.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> SEDUMA01 <br> <b> Ciudad: </b> Mérida <br> <b> Mediciones: </b> SO2, TMP, CO, NO2, O3, PM2.5 <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_387c7d6ade8a4ec893762e7ced6050ad = L.circleMarker(
+                [19.635555555556, -98.912222222222],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_387c7d6ade8a4ec893762e7ced6050ad.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Acolman <br> <b> Ciudad: </b> Valle de México <br> <b> Mediciones: </b> CO, NO2, O3, PM10, SO2 <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_1c04a76b94644dd6a757723a0d8ac151 = L.circleMarker(
+                [19.154286111111, -99.16277777777799],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_1c04a76b94644dd6a757723a0d8ac151.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Ajusco <br> <b> Ciudad: </b> Valle de México <br> <b> Mediciones: </b> O3, PM2.5, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_e930a25f28eb466f841ebfa98bec7d00 = L.circleMarker(
+                [19.272222222222, -99.20777777777799],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_e930a25f28eb466f841ebfa98bec7d00.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Ajusco Medio <br> <b> Ciudad: </b> Valle de México <br> <b> Mediciones: </b> CO, NO2, TMP, O3, PM10, PM2.5, SO2 <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_3ed2d46b0dc148a7bfd35489322c72a2 = L.circleMarker(
+                [19.577222222221998, -99.254166666667],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_3ed2d46b0dc148a7bfd35489322c72a2.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Atizapán <br> <b> Ciudad: </b> Valle de México <br> <b> Mediciones: </b> CO, NO2, O3, SO2 <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_f0fc4a7d3a414e16b4bac753c8e834a8 = L.circleMarker(
+                [19.468611111111, -99.17],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_f0fc4a7d3a414e16b4bac753c8e834a8.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Camarones <br> <b> Ciudad: </b> Valle de México <br> <b> Mediciones: </b> PM10, PM2.5, CO, NO2, O3, SO2 <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_4d5bf7d75b874156bf7d480b682a7912 = L.circleMarker(
+                [19.326388888889, -99.176111111111],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_4d5bf7d75b874156bf7d480b682a7912.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Centro de Ciencias de la Atmósfera <br> <b> Ciudad: </b> Valle de México <br> <b> Mediciones: </b> SO2, TMP, CO, NO2, O3, PM2.5 <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_0fb921934f0d4bb88e9d99b8da1971f1 = L.circleMarker(
+                [19.267222222222, -98.88611111111099],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_0fb921934f0d4bb88e9d99b8da1971f1.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Chalco <br> <b> Ciudad: </b> Valle de México <br> <b> Mediciones: </b> CO, NO2, O3, SO2, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_8ef35d3d82db4841aee6a4fc53120ce7 = L.circleMarker(
+                [19.365555555556, -99.29194444444401],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_8ef35d3d82db4841aee6a4fc53120ce7.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Cuajimalpa <br> <b> Ciudad: </b> Valle de México <br> <b> Mediciones: </b> SO2, TMP, NO2, O3 <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_d6b3c1eb25d3413498d67a6f32037cdd = L.circleMarker(
+                [19.722222222221998, -99.19861111111099],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_d6b3c1eb25d3413498d67a6f32037cdd.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Cuautitlán <br> <b> Ciudad: </b> Valle de México <br> <b> Mediciones: </b> NO2, O3, PM10, SO2, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_19392e0a7caa43abb2c158e0b77d0ba7 = L.circleMarker(
+                [19.4825, -99.243611111111],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_19392e0a7caa43abb2c158e0b77d0ba7.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> FES Acatlán <br> <b> Ciudad: </b> Valle de México <br> <b> Mediciones: </b> CO, NO2, O3, PM10, SO2, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_4d48b6cb0f454bb1b01baff1997e2809 = L.circleMarker(
+                [19.411666666667, -99.15222222222201],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_4d48b6cb0f454bb1b01baff1997e2809.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Hospital General de México <br> <b> Ciudad: </b> Valle de México <br> <b> Mediciones: </b> PM10, PM2.5, CO, NO2, O3, SO2, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_3b977b9c443044ac8b71e4212259f108 = L.circleMarker(
+                [19.384444444444, -99.117777777778],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_3b977b9c443044ac8b71e4212259f108.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Iztacalco <br> <b> Ciudad: </b> Valle de México <br> <b> Mediciones: </b> CO, NO2, O3, PM10, SO2 <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_22d40f8d5d7a4edd825cea5ab213d94f = L.circleMarker(
+                [19.535, -99.117777777778],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_22d40f8d5d7a4edd825cea5ab213d94f.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> La Presa <br> <b> Ciudad: </b> Valle de México <br> <b> Mediciones: </b> CO, O3, SO2 <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_b3cd6dc7a2b240338714aab1d3cbc8f5 = L.circleMarker(
+                [19.578888888889, -99.03972222222201],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_b3cd6dc7a2b240338714aab1d3cbc8f5.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Los Laureles <br> <b> Ciudad: </b> Valle de México <br> <b> Mediciones: </b> CO, NO2, O3, SO2 <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_d16d46958fac496fbaa09c37073d34d7 = L.circleMarker(
+                [19.424722222221998, -99.11972222222201],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_d16d46958fac496fbaa09c37073d34d7.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Merced <br> <b> Ciudad: </b> Valle de México <br> <b> Mediciones: </b> CO, NO2, O3, PM10, PM2.5, SO2, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_7071a332c361400ca9306a37fa582801 = L.circleMarker(
+                [19.460416666666998, -98.902861111111],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_7071a332c361400ca9306a37fa582801.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Montecillo <br> <b> Ciudad: </b> Valle de México <br> <b> Mediciones: </b> O3, SO2, CO, NO2, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_dad8a209c8ac49b390be2be7335ed4cd = L.circleMarker(
+                [19.393888888889002, -99.028333333333],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_dad8a209c8ac49b390be2be7335ed4cd.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Nezahualcóyotl <br> <b> Ciudad: </b> Valle de México <br> <b> Mediciones: </b> CO, NO2, O3, PM2.5, SO2, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_90c24fe5383349419dffff9a73478244 = L.circleMarker(
+                [19.325277777778002, -99.204166666667],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_90c24fe5383349419dffff9a73478244.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Pedregal <br> <b> Ciudad: </b> Valle de México <br> <b> Mediciones: </b> CO, NO2, O3, PM10, PM2.5, SO2, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_bb99fc8d38fa4edfb5c5a4d7d300dacd = L.circleMarker(
+                [19.533055555556, -99.03055555555599],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_bb99fc8d38fa4edfb5c5a4d7d300dacd.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> San Agustín <br> <b> Ciudad: </b> Valle de México <br> <b> Mediciones: </b> O3, PM10, PM2.5, CO, NO2, SO2, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_c3de15c1db1e4a14917e34e18bad058e = L.circleMarker(
+                [19.3575, -99.263055555556],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_c3de15c1db1e4a14917e34e18bad058e.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Santa Fe <br> <b> Ciudad: </b> Valle de México <br> <b> Mediciones: </b> SO2, TMP, CO, NO2, O3, PM10, PM2.5 <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_e77faeccc5684f33a94836de9c6bf219 = L.circleMarker(
+                [19.404, -99.20272222222201],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_e77faeccc5684f33a94836de9c6bf219.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Miguel Hidalgo <br> <b> Ciudad: </b> Valle de México <br> <b> Mediciones: </b> SO2, TMP, CO, NO2, O3, PM10, PM2.5 <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_bcc4deb51bdd4efdae076c5f362f65ee = L.circleMarker(
+                [19.246666666667, -99.010833333333],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_bcc4deb51bdd4efdae076c5f362f65ee.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Tlahuac <br> <b> Ciudad: </b> Valle de México <br> <b> Mediciones: </b> CO, NO2, O3, PM10, SO2, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_3fd5c473e13142018be6cb41d9a4399d = L.circleMarker(
+                [19.529166666667, -99.204722222222],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_3fd5c473e13142018be6cb41d9a4399d.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Tlalnepantla <br> <b> Ciudad: </b> Valle de México <br> <b> Mediciones: </b> O3, PM10, CO, NO2, PM2.5, SO2, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_84815d2277794a0a9ee2bdb939753e97 = L.circleMarker(
+                [19.602777777778, -99.177222222222],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_84815d2277794a0a9ee2bdb939753e97.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Tultitlán <br> <b> Ciudad: </b> Valle de México <br> <b> Mediciones: </b> SO2, CO, NO2, O3, PM10 <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_9d061e881bd54ec5942efd00ba95cbd8 = L.circleMarker(
+                [19.360833333333, -99.073888888889],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_9d061e881bd54ec5942efd00ba95cbd8.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> UAM Iztapalapa <br> <b> Ciudad: </b> Valle de México <br> <b> Mediciones: </b> CO, NO2, O3, PM10, PM2.5, SO2, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_de517901fd22448bb9cc0baf17e5b54a = L.circleMarker(
+                [19.304444444444, -99.103888888889],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_de517901fd22448bb9cc0baf17e5b54a.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> UAM Xochimilco <br> <b> Ciudad: </b> Valle de México <br> <b> Mediciones: </b> O3, PM2.5, CO, NO2, SO2, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_05f10d812dcb4adc8d9b9588f7667c68 = L.circleMarker(
+                [19.6575, -99.096666666667],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_05f10d812dcb4adc8d9b9588f7667c68.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Villa de las Flores <br> <b> Ciudad: </b> Valle de México <br> <b> Mediciones: </b> TMP, CO, NO2, O3, PM10, SO2 <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_2cc80328e192419ebca4b708e948af91 = L.circleMarker(
+                [19.526111111111, -99.0825],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_2cc80328e192419ebca4b708e948af91.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Xalostoc <br> <b> Ciudad: </b> Valle de México <br> <b> Mediciones: </b> CO, NO2, O3, PM10, PM2.5, SO2, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_7eaf67c1881d4925a002bbd291c85d38 = L.circleMarker(
+                [20.508972222222, -97.44698611111099],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_7eaf67c1881d4925a002bbd291c85d38.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Universidad Veracruzana <br> <b> Ciudad: </b> Poza Rica <br> <b> Mediciones: </b> NO2, O3, CO, PM10, PM2.5, SO2, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_4738c0bb1d4e4996a6cb46e2ba4e1e1c = L.circleMarker(
+                [20.08525, -98.36663888888901],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_4738c0bb1d4e4996a6cb46e2ba4e1e1c.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Tulancingo <br> <b> Ciudad: </b> Tulancingo <br> <b> Mediciones: </b> NO2, CO, O3, PM10, PM2.5, SO2, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_5c90879325f4479b9a549e6589d9ce56 = L.circleMarker(
+                [17.094666666667, -96.75216666666701],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_5c90879325f4479b9a549e6589d9ce56.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Casa Hogar <br> <b> Ciudad: </b> Oaxaca <br> <b> Mediciones: </b> O3, PM10, CO, NO2, PM2.5, SO2, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_cf24b117e87746788677dc969e63a42c = L.circleMarker(
+                [19.199166666666997, -99.010833333333],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_cf24b117e87746788677dc969e63a42c.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Milpa Alta <br> <b> Ciudad: </b> Valle de México <br> <b> Mediciones: </b> CO, O3, PM10, PM2.5, SO2, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_81e4b2bf76ab4d4aa749646434863a54 = L.circleMarker(
+                [19.371666666667, -99.159166666667],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_81e4b2bf76ab4d4aa749646434863a54.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Benito Juárez <br> <b> Ciudad: </b> Valle de México <br> <b> Mediciones: </b> CO, O3, PM10, PM2.5, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_50673b4955d64d9b9c09e0795ccf93dc = L.circleMarker(
+                [19.292222222221998, -99.38055555555599],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_50673b4955d64d9b9c09e0795ccf93dc.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Instituto Nacional de Investigaciones Nucleares <br> <b> Ciudad: </b> Valle de México <br> <b> Mediciones: </b> PM2.5, SO2, CO, O3, PM10, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_dcee94a19acb4b6cb0bae4d8d3a98bdb = L.circleMarker(
+                [19.482777777778, -99.094722222222],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_dcee94a19acb4b6cb0bae4d8d3a98bdb.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Gustavo A. Madero <br> <b> Ciudad: </b> Valle de México <br> <b> Mediciones: </b> O3, PM2.5, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_cf4546d0f7894fa09d47ab8f393d368e = L.circleMarker(
+                [21.903000000000002, -102.28461111111],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_cf4546d0f7894fa09d47ab8f393d368e.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Instituto Educativo <br> <b> Ciudad: </b> Aguascalientes <br> <b> Mediciones: </b> TMP, CO, NO2, O3, PM10, SO2 <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_dc8a8f5bff3e43ddbee355ee88f740a5 = L.circleMarker(
+                [25.421472222222, -100.99686111111001],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_dc8a8f5bff3e43ddbee355ee88f740a5.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Finanzas <br> <b> Ciudad: </b> Saltillo <br> <b> Mediciones: </b> CO, NO2, O3, PM10, PM2.5, SO2, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_92b7f5f4dd914952894bd86e6400bbc4 = L.circleMarker(
+                [26.908194444444, -101.427],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_92b7f5f4dd914952894bd86e6400bbc4.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Jurisdicción Sanitaria <br> <b> Ciudad: </b> Monclova <br> <b> Mediciones: </b> NO2, O3, CO, PM10, PM2.5, SO2, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_4df91d7e00b94287a67d82f5e0d957d5 = L.circleMarker(
+                [28.707666666667, -100.5265],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_4df91d7e00b94287a67d82f5e0d957d5.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Centro de Rehabilitación DIF <br> <b> Ciudad: </b> Piedras Negras <br> <b> Mediciones: </b> O3, PM10, CO, NO2, PM2.5, SO2, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_ced0f5fe849d40daa0f16971341a03e9 = L.circleMarker(
+                [20.914755555556, -100.74380555556],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_ced0f5fe849d40daa0f16971341a03e9.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Presidencia Municipal <br> <b> Ciudad: </b> San Miguel de Allende <br> <b> Mediciones: </b> TMP, PM2.5 <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_c6794e216de94bca979b125200a87ada = L.circleMarker(
+                [20.425277777778, -101.19805555556],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_c6794e216de94bca979b125200a87ada.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Presidencia Municipal <br> <b> Ciudad: </b> Abasolo <br> <b> Mediciones: </b> PM2.5, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_41c7744af3a2403cb95208fa58b9b185 = L.circleMarker(
+                [21.295861111110998, -100.52330555556],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_41c7744af3a2403cb95208fa58b9b185.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Presidencia Municipal <br> <b> Ciudad: </b> San Luis de la Paz <br> <b> Mediciones: </b> TMP, PM2.5 <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_64e06014cd064fc5b509ecc4c13b5261 = L.circleMarker(
+                [21.017583333333, -101.25736111111],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_64e06014cd064fc5b509ecc4c13b5261.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Universidad Gto Sede Belen <br> <b> Ciudad: </b> Guanajuato <br> <b> Mediciones: </b> PM2.5, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_9ff47a9a8f464d2ab1bd607da1a7c1c8 = L.circleMarker(
+                [19.701388888889, -101.195],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_9ff47a9a8f464d2ab1bd607da1a7c1c8.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Palacio Municipal <br> <b> Ciudad: </b> Morelia <br> <b> Mediciones: </b> CO, NO2, O3, PM2.5, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_ff4197ee6d584a53aff0f217013c3041 = L.circleMarker(
+                [21.040238888889, -101.87628333333001],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_ff4197ee6d584a53aff0f217013c3041.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Purísima del Rincón <br> <b> Ciudad: </b> Purísima del Rincón <br> <b> Mediciones: </b> O3, PM10, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_53371d18fa92454aa7270a8494b04e2f = L.circleMarker(
+                [25.600555555556003, -99.994166666667],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_53371d18fa92454aa7270a8494b04e2f.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Cadereyta <br> <b> Ciudad: </b> Monterrey <br> <b> Mediciones: </b> CO, NO2, O3, PM10, PM2.5, SO2, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_9ca79c3a978149af8ccae1db135ae087 = L.circleMarker(
+                [25.73, -100.30972222222],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_9ca79c3a978149af8ccae1db135ae087.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Universidad <br> <b> Ciudad: </b> Monterrey <br> <b> Mediciones: </b> NO2, O3, CO, PM10, PM2.5, SO2, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_73e293ad45db4599862b60c2057ee109 = L.circleMarker(
+                [25.575277777778002, -100.24916666666999],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_73e293ad45db4599862b60c2057ee109.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Pueblo Serena <br> <b> Ciudad: </b> Monterrey <br> <b> Mediciones: </b> CO, NO2, O3, PM10, PM2.5, SO2, TMP <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+            var circle_marker_7c0430cf497446888d2753b2515e660e = L.circleMarker(
+                [22.159444444444, -100.95333333333001],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_e9cb9bd95a904f27b4cc92b44100e2b0);
+            
+    
+        circle_marker_7c0430cf497446888d2753b2515e660e.bindTooltip(
+            '<div>'
+            + '<b> Nombre: </b> Escuela Primaria 1° de mayo <br> <b> Ciudad: </b> San Luis Potosí Estatal <br> <b> Mediciones: </b> TMP, CO, NO2, O3, SO2 <br>' + '</div>',
+            {"sticky": true}
+        );
+        
+</script>
